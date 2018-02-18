@@ -1,0 +1,31 @@
+{
+  "name": "kiwi-bulk-loader",
+  "version": "1.0.0",
+  "description": "Multithreaded bulk importer for Marmotta's KiWi triplestore",
+  "author": {
+    "name": "Blake Regalia",
+    "email": "blake.regalia@gmail.com"
+  },
+  "main": "lib/main/bulk.js",
+  "keywords": [
+    "linked-data",
+    "semantic-web",
+    "marmotta",
+    "triplestore",
+    "rdf",
+    "turtle",
+    "ttl"
+  ],
+  "repository": "blake-regalia/kiwi-bulk-loader",
+  "scripts": {
+    "test": "gulp"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "big-integer": "^1.6.26",
+    "colors": "^1.1.2",
+    "pg": "^7.4.1",
+    "progress": "^2.0.0",
+    "worker": "^0.3.5"
+  }
+}
