@@ -85,7 +85,7 @@ module.exports = {
         'no-with': 2,
         // 'one-var': 0,
         'quote-props': [1, 'as-needed'],
-        quotes: [1, 'single'],
+        quotes: [1, 'single', {avoidEscape:true}],
         semi: [2, 'always'],
         'semi-spacing': [1, {before:false, after:true}],
         // 'space-after-keywords': 0,

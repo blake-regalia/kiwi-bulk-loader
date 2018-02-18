@@ -18,6 +18,7 @@
   ],
   "repository": "blake-regalia/kiwi-bulk-loader",
   "scripts": {
+    "preinstall": "npm link graphy",
     "test": "gulp"
   },
   "devDependencies": {},
