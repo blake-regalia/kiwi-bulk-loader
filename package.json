@@ -25,6 +25,7 @@
   "dependencies": {
     "big-integer": "^1.6.26",
     "colors": "^1.1.2",
+    "minimist": "^1.2.0",
     "pg": "^7.4.1",
     "pg-copy-streams": "^1.2.0",
     "progress": "^2.0.0"
