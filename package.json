@@ -26,7 +26,6 @@
     "big-integer": "^1.6.26",
     "colors": "^1.1.2",
     "pg": "^7.4.1",
-    "progress": "^2.0.0",
-    "worker": "^0.3.5"
+    "progress": "^2.0.0"
   }
 }
