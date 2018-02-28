@@ -14,3 +14,6 @@ create unique index idx_node_essence_nls on nodes(ntype, ltype, svalue)
 
 
 alter table triples add constraint triples_unique unique(subject, predicate, object);
+
+create index idx_triples on triples(object, predicate, subject)
+	where deleted = false;
