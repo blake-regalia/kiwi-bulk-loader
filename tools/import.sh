@@ -1,19 +1,13 @@
 #!/bin/bash
 
+# output dir
 pushd $1
 	output_dir=$(pwd)
 popd
 
+# relative to script
 cd "${BASH_SOURCE%/*}" || exit
 
-pushd ../lib/main
-	# bulk import ttl from gnis and nhd
-	node bulk.js $output_dir/gnis/*.ttl
-	node bulk.js $output_dir/nhd/*.ttl
-
-	# gnis features are stored as wkt
-	node geometry.js --wkt $output_dir/gnis/*.tsv
-
-	# nhd features are binary
-	node geometry.js $output_dir/nhd/*.tsv
-popd
+# invoke bulk and geometry imports
+./tools/bulk.sh $output_dir
+./tools/geometry.sh $output_dir
