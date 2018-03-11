@@ -1,4 +1,4 @@
-# Dockerfile for USGS Triplifier
+# Dockerfile for kiwi bulk loader
 FROM node:9
 MAINTAINER Blake Regalia <blake.regalia@gmail.com>
 
