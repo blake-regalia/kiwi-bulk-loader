@@ -18,9 +18,9 @@
   ],
   "repository": "blake-regalia/kiwi-bulk-loader",
   "scripts": {
-    "all": "./tools/import.sh",
-    "ttl": "./tools/bulk.sh",
-    "tsv": "./tools/geometry.sh"
+    "all": "./tools/import.sh data/output",
+    "ttl": "./tools/bulk.sh data/output",
+    "tsv": "./tools/geometry.sh data/output"
   },
   "devDependencies": {},
   "dependencies": {

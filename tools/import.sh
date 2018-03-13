@@ -9,5 +9,5 @@ popd
 cd "${BASH_SOURCE%/*}" || exit
 
 # invoke bulk and geometry imports
-./tools/bulk.sh $output_dir
-./tools/geometry.sh $output_dir
+./bulk.sh $output_dir
+./geometry.sh $output_dir
