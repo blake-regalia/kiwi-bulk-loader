@@ -9,5 +9,5 @@ popd
 
 # bulk import all ttl files
 pushd ../lib/main
-	node bulk.js $output_dir/**/*.ttl
+	node --max_old_space_size=8192 bulk.js $output_dir/**/*.ttl
 popd

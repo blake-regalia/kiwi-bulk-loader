@@ -10,5 +10,5 @@ cd "${BASH_SOURCE%/*}" || exit
 
 # bulk import all ttl files
 pushd ../lib/main
-	node geometry.js $output_dir/**/*.tsv
+	node --max_old_space_size=8192 geometry.js $output_dir/**/*.tsv
 popd
