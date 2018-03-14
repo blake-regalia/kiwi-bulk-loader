@@ -6,3 +6,4 @@ data
 lib/debug
 coverage
 .git-dev
+package-lock.json
