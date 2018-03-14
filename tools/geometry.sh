@@ -8,7 +8,7 @@ popd
 # relative to script
 cd "${BASH_SOURCE%/*}" || exit
 
-# bulk import all ttl files
+# bulk import all tsv files
 pushd ../lib/main
-	node --max_old_space_size=8192 geometry.js $output_dir/**/*.tsv
+	node --max_old_space_size=8192 geometry.js $(find "$output_dir" -type f | grep "\.tsv$")
 popd

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# output dir
+# resolve absolute path
 pushd $1
 	output_dir=$(pwd)
 popd
