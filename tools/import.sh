@@ -8,6 +8,9 @@ popd
 # relative to script
 cd "${BASH_SOURCE%/*}" || exit
 
+# remove indexes
+psql $PGDATABASE < lib/sql/remove-indexes.sql
+
 # invoke bulk and geometry imports
 ./bulk.sh $output_dir
 ./geometry.sh $output_dir
