@@ -18,18 +18,8 @@ RUN apt-get -y update \
 		postgresql-client-9.5 \
 	&& apt-get clean
 
-# special branch of graphy
-RUN npm i -g gulp
-RUN cd /src/ \
-    && git clone -b data_format https://github.com/blake-regalia/graphy.js.git graphy \
-    && cd graphy \
-    && npm i \
-    && gulp \
-    && npm link
-
 # install software
-RUN npm i \
-    && npm link graphy
+RUN npm i
 
 # entrypoint
 ENTRYPOINT ["npm", "run"]
