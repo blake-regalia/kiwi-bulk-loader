@@ -15,7 +15,7 @@ RUN apt-get -y update \
     && apt-get upgrade -y \
     && apt-get install -yq \
         postgresql-client-common \
-        postgresql-client-12.1 \
+        postgresql-client-12 \
     && apt-get clean
 
 # install software
